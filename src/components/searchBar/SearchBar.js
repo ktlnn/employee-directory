@@ -6,18 +6,27 @@ function SearchBar() {
 
     const context = useContext(UserDataContext);
 
-    return(
+    return (
         <div className="SearchBar">
             <form>
-                <input
-                type="search"
-                placeholder="name"
-                aria-label="Search"
-                onChange={name => context.handleSearchChange(name)}
-                />
-            <button className="btn btn-success" type="submit">
-             Submit
-            </button>
+                <div className="input-group mb-3">
+                    <input 
+                    type="search" 
+                    class="form-control" 
+                    placeholder="Name" 
+                    aria-label="Name" 
+                    aria-describedby="button-addon2" 
+                    onChange={name => context.handleSearchChange(name)}
+                    />
+                    <div className="input-group-append">
+                        <button 
+                        className="btn btn-outline-secondary" 
+                        type="button" 
+                        id="button-addon2">
+                            Submit
+                        </button>
+                    </div>
+                </div>
             </form>
         </div>
     )

@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import './style.css'
-import UserDataContext from "../../utils/UserDataContext";
+import EmpDataContext from '../../utils/EmpDataContext';
 
 function SearchBar() {
 
-    const context = useContext(UserDataContext);
+    const context = useContext(EmpDataContext);
 
     return (
         <div className="SearchBar">
@@ -16,7 +16,7 @@ function SearchBar() {
                     placeholder="Name" 
                     aria-label="Name" 
                     aria-describedby="button-addon2" 
-                    onChange={name => context.handleSearchChange(name)}
+                    onChange={name => context.handleSearch(name)}
                     />
                     <div className="input-group-append">
                         <button 

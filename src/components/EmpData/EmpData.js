@@ -1,19 +1,37 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import EmpDataContext from '../../utils/EmpDataContext';
 
-// this is where the employee information is organized for the table
+// this is how the employee data is generated
 
-function UserData() {
+const EmpData = () => {
 
     const context = useContext(EmpDataContext);
 
     return (
-        <div>
-            
+        <div className="emp-data">
+            <table className="table table-striped">
+               {context.searchResults.map((employee) => {
+                   return(
+                       <tr>
+                           <td>
+                               {employee.name.first} {employee.name.last}
+                           </td>
+                           <td>
+                               {employee.cell}
+                           </td>
+                           <td>
+                               {employee.email}
+                           </td>
+                           <td>
+                               {employee.dob.date}
+                           </td>
+                       </tr>
+                   )
+               })}
+                
+            </table>
         </div>
     )
-
-
 }
 
-export default UserData;
+export default EmpData;

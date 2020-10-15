@@ -30,18 +30,18 @@ const EmpData = () => {
                                className="img-responsive"
                                />
                            </td>
-                           <td>
+                           <td className="align-middle">
                                {employee.name.first} {employee.name.last}
                            </td>
-                           <td>
+                           <td className="align-middle">
                                {employee.cell}
                            </td>
-                           <td>
+                           <td className="align-middle">
                                <a href={"mailto:" + employee.email} target="__blank">
                                    {employee.email}
                                </a>
                            </td>
-                           <td>
+                           <td className="align-middle">
                                {formatDOB(employee.dob.date)}
                            </td>
                        </tr>

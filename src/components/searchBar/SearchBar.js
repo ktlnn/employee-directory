@@ -15,8 +15,9 @@ function SearchBar() {
                     class="form-control" 
                     placeholder="Name" 
                     aria-label="Name" 
-                    aria-describedby="button-addon2" 
-                    onChange={name => context.handleSearch(name)}
+                    aria-describedby="button-addon2"
+                    value={context.search} 
+                    onChange={event => context.setSearch(event.target.value)}
                     />
                     <div className="input-group-append">
                         <button 

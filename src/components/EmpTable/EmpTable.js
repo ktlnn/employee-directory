@@ -11,25 +11,15 @@ const EmpTable = () => {
     return (
         <div className="emp-table">
             <table className="table table-striped">
-                <thead>
-                    <tr>
-                        {context.empState.headings.map(({name}) => {
-                            return (
-                                <th
-                                    className="col"
-                                    key={name}
-                                    // style={{ width }}
-                                    onClick={() => {
-                                        context.handleSort(name);
-                                    }}
-                                >
-                                    {name}
-                                    <span className="pointer"></span>
-                                </th>
-                            );
-                        })}
-                    </tr>
-                </thead>
+               {context.searchResults.map((employee) => {
+                   return(
+                       <tr>
+                           <td>
+                               {employee.name.first}
+                           </td>
+                       </tr>
+                   )
+               })}
                 {/* where EmpData would go */}
             </table>
         </div>
@@ -38,16 +28,3 @@ const EmpTable = () => {
 
 export default EmpTable;
 
-{/* <th scope="col">Image</th>  
-                        <th 
-                        scope="col"
-                        onClick={(name) => {
-                            context.handleSort(name)
-                        }}
-                        >
-                        Name
-                        <span className="pointer"></span>
-                        </th>  
-                        <th scope="col">Phone Number</th>
-                        <th scope="col">Email</th>  
-                        <th scope="col">DOB</th> */}

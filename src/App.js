@@ -4,7 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header/Header';
 import SearchBar from './components/SearchBar/SearchBar';
 import API from './utils/API';
-import EmpTable from './components/EmpTable/EmpTable';
+// import EmpTable from './components/EmpTable/EmpTable';
+import EmpData from './components/EmpData/EmpData';
 import EmpDataContext from './utils/EmpDataContext';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
   const [search, setSearch] = useState("");
   const [empData, setEmpData] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
+
 
   useEffect(() => {
     API.getUsers()
@@ -37,7 +39,7 @@ function App() {
     <EmpDataContext.Provider value={{search, setSearch, empData, setEmpData, searchResults, setSearchResults}}>
       <Header />
       <SearchBar />
-      <EmpTable />
+      <EmpData />
     </EmpDataContext.Provider>
     </div>
   );

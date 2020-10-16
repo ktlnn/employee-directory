@@ -5,7 +5,6 @@ import Header from './components/Header/Header';
 import SearchBar from './components/SearchBar/SearchBar';
 import API from './utils/API';
 import EmpTable from './components/EmpTable/EmpTable';
-// import EmpData from './components/EmpData/EmpData';
 import EmpDataContext from './utils/EmpDataContext';
 
 function App() {
@@ -37,7 +36,8 @@ function App() {
       // anything true will stay
       // anything false will get removed
       // what if/else-if/else goes here
-      return employee.name.first.toLowerCase().indexOf(search.toLowerCase()) >= 0 
+      let name = employee.name.first + employee.name.last
+      return name.toLowerCase().indexOf(search.toLowerCase()) >= 0 
     }))
   }, [search, empData])
 

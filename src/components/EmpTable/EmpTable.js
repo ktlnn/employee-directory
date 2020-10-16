@@ -12,7 +12,7 @@ const EmpTable = () => {
                 <thead>
                  <tr>
                      {context.tableHeadings.headings.map(({name, width}) => {
-                         return (
+                        return (
                             <th
                             className="col"
                             key={name}
@@ -20,15 +20,14 @@ const EmpTable = () => {
                             >
                                 {name}
                             </th>
-                         )
+                        )
                      })}
-                 </tr>
-                   
+                 </tr>                   
                 </thead>
                 <EmpData />
             </table>
         </div>
-    )
+    );
 }
 
 export default EmpTable;

@@ -22,7 +22,7 @@ const EmpData = () => {
             <tbody>
                {context.searchResults.map((employee) => {
                    return(
-                       <tr>
+                       <tr key={employee.login.uuid}>
                            <td>
                                <img
                                src={employee.picture.medium}

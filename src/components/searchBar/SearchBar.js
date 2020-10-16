@@ -12,7 +12,7 @@ function SearchBar() {
                 <div className="input-group mb-3">
                     <input 
                     type="search" 
-                    class="form-control" 
+                    className="form-control" 
                     placeholder="Name" 
                     aria-label="Name" 
                     aria-describedby="button-addon2"

@@ -4,8 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header/Header';
 import SearchBar from './components/SearchBar/SearchBar';
 import API from './utils/API';
-// import EmpTable from './components/EmpTable/EmpTable';
-import EmpData from './components/EmpData/EmpData';
+import EmpTable from './components/EmpTable/EmpTable';
+// import EmpData from './components/EmpData/EmpData';
 import EmpDataContext from './utils/EmpDataContext';
 
 function App() {
@@ -13,7 +13,15 @@ function App() {
   const [search, setSearch] = useState("");
   const [empData, setEmpData] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
-
+  const [tableHeadings, setTableHeadings] = useState({
+    headings: [
+      {name: "Image", width: "10%"},
+      {name: "Name", width: "10%"},
+      {name: "Phone", width: "20%"},
+      {name: "Email", width: "20%"},
+      {name: "DOB", width: "10%"}
+    ]
+  })
 
   useEffect(() => {
     API.getUsers()
@@ -36,10 +44,10 @@ function App() {
 
   return (
     <div className="App">
-    <EmpDataContext.Provider value={{search, setSearch, empData, setEmpData, searchResults, setSearchResults}}>
+    <EmpDataContext.Provider value={{search, setSearch, empData, setEmpData, searchResults, setSearchResults, tableHeadings, setTableHeadings}}>
       <Header />
       <SearchBar />
-      <EmpData />
+      <EmpTable />
     </EmpDataContext.Provider>
     </div>
   );

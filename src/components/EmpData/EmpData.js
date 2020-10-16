@@ -18,8 +18,8 @@ const EmpData = () => {
     }
 
     return (
-        <div className="emp-data">
-            <table className="table table-striped">
+     
+            <tbody>
                {context.searchResults.map((employee) => {
                    return(
                        <tr>
@@ -48,8 +48,8 @@ const EmpData = () => {
                    )
                })}
                 
-            </table>
-        </div>
+            </tbody>
+     
     )
 }
 

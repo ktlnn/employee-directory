@@ -16,7 +16,11 @@ const EmpDataContext = React.createContext({
             {name: "DOB", width: "10%"}
           ]
     },
-    setTableHeadings: () => {}
+    setTableHeadings: () => {},
+    orderBy: "",
+    setOrderBy: () => {},
+    asc: true,
+    setAsc: () => {}
 });
 
 export default EmpDataContext;

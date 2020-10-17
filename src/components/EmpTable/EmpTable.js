@@ -16,7 +16,16 @@ const EmpTable = () => {
                             <th
                             className="col"
                             key={name}
-                            style={{width}}
+                            style={{
+                                width: width,
+                                cursor: "pointer"
+                            }}
+                            onClick={() => {
+                                if (context.orderBy === name){
+                                    context.setAsc(!context.asc)
+                                }
+                                context.setOrderBy(name);
+                            }}
                             >
                                 {name}
                             </th>

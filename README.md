@@ -22,5 +22,11 @@ Employee Directory is an application that allows the user to view their entire e
 Employee Directory is able to be used by clicking on the "Deployed Link" in links or the repository can be cloned. If the repository is cloned, run an "npm install" or "yarn add" in your terminal in order to download the packages that are required to allow this application to work. Once all packages are installed, run an "npm start" or "yarn start" to open Employee Directory in your browser. 
 
 ## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  
 ## Screenshots
+![employee-directory-screenshot](images/employee-directory-screenshot.png)
+![employee-directory-demo](images/employee-directory-demo.gif)
+
+## Questions
+If you have any questions about this application, feel free to email: ktlnn.nguyen@gmail.com

@@ -3,4 +3,13 @@
     background-color: rgb(20, 46, 119);
     padding: 30px;
     color: white;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+.header h1{
+    font-size: 50px;
+}
+
+.header p{
+    font-size: 20px;
 }

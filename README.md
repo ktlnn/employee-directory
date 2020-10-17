@@ -1,7 +1,7 @@
 ## employee-directory
 
 ## Links
-- Deployed Link: 
+- Deployed Link: https://ktlnn.github.io/employee-directory/  
 - API used: https://randomuser.me/api/?results=200&nat=us
 
 ## User Story

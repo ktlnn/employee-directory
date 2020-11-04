@@ -5,9 +5,9 @@
 - API used: https://randomuser.me/api/?results=200&nat=us
 
 ## Table of Contents
-- [User Story](#userstory)
-- [Business Context](#businesscontext)
-- [How Employee Directory Works](#howemployeedirectoryworks)
+- [User Story](#user-story)
+- [Business Context](#business-context)
+- [How Employee Directory Works](#how-employee-directory-works)
 - [Installation](#installation)
 - [Webpage Screenshots](#screenshots)
 - [Questions](#questions)

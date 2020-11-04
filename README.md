@@ -1,8 +1,17 @@
-## employee-directory
+## employee-directory [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Links
 - Deployed Link: https://ktlnn.github.io/employee-directory/  
 - API used: https://randomuser.me/api/?results=200&nat=us
+
+## Table of Contents
+- [User Story](#userstory)
+- [Business Context](#businesscontext)
+- [How Empmmloyee Directory Works](#howemployeedirectoryworks)
+- [Installation](#installation)
+- [Webpage Screenshots](#screenshots)
+- [Questions](#questions)
+
 
 ## User Story
 ```
@@ -19,9 +28,6 @@ Employee Directory is an application that allows the user to view their entire e
 
 ## Installation
 Employee Directory is able to be used by clicking on the "Deployed Link" in links or the repository can be cloned. If the repository is cloned, run an "npm install" or "yarn add" in your terminal in order to download the packages that are required to allow this application to work. Once all packages are installed, run an "npm start" or "yarn start" to open Employee Directory in your browser. 
-
-## License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  
 ## Screenshots
 ![employee-directory-screenshot](images/employee-directory-screenshot.png)

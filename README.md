@@ -6,7 +6,7 @@
 
 ## Table of Contents
 - [User Story](#userstory)
-- [Business Context](#business context)
+- [Business Context](#businesscontext)
 - [How Employee Directory Works](#howemployeedirectoryworks)
 - [Installation](#installation)
 - [Webpage Screenshots](#screenshots)
